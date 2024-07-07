@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "title": "Weather",
   "category": "widgets",
-  "description": "Pulls in the weather from a city of your choice using OpenWeather Map.",
+  "description": "Pulls in the weather from a city of your choice using Open Weather Map.",
   "attributes": {
     "city": {
       "type": "string",
@@ -29,6 +29,5 @@
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",
-  "viewScript": "file:./view.js",
   "render": "file:./render.php"
 }

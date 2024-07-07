@@ -2,7 +2,7 @@
  * WordPress dependencies
  */
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
-import { PanelBody, PanelRow, SelectControl, TextControl, ToggleControl } from '@wordpress/components';
+import { PanelBody, SelectControl, TextControl, ToggleControl } from '@wordpress/components';
 import { Fragment, useEffect, useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 
@@ -88,7 +88,6 @@ const Edit = ( props ) => {
 
 				
 				<PanelBody title={ __( 'City', 'built-weather' ) }>
-					<PanelRow>My Panel Inputs and Labels</PanelRow>
 					<TextControl
 						label={ __( 'City', 'built-weather' ) }
 						value={ city }
@@ -116,7 +115,7 @@ const Edit = ( props ) => {
 			</InspectorControls>
 
 			<div { ...blockProps }>
-				<h3>{__('Current Weather in', 'built-weather')} {city}</h3>
+				<h2>{city}</h2>
                     {isLoading && <p>{__('Loading...', 'built-weather')}</p>}
                     {error && <p className="error">{error}</p>}
                     {weather && (

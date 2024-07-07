@@ -80,7 +80,7 @@ class WeatherBlock {
    * @param string $city The city name.
    * @return array|WP_Error The weather data on success, or WP_Error on failure.
    */
-  protected function get_weather_data( $city = 'Cleveland', $units = 'metric' ) {
+  public function get_weather_data( $city = 'Cleveland', $units = 'metric' ) {
     if ( empty( $this->api_key ) ) {
         return new WP_Error( 'api_key_missing', __( 'OpenWeatherMap API key is not set', 'built-weather' ) );
     }
