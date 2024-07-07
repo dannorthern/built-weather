@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name:       Built Weather
- * Description:       Pulls in the weather from a location of your choice using OpenWeather Map.
+ * Plugin Name:       Built Weather Block
+ * Description:       Block that pulls in the weather from a location of your choice using OpenWeather Map.
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           0.1.0
