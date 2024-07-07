@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "built-north/weather",
+  "version": "0.1.0",
+  "title": "Weather",
+  "category": "widgets",
+  "description": "Pulls in the weather from a city of your choice using OpenWeather Map.",
+  "attributes": {
+    "city": {
+      "type": "string",
+      "default": "Cleveland"
+    },
+    "units": {
+      "type": "string",
+      "default": "Imperial"
+    }
+  },
+  "example": {},
+  "supports": {
+    "color": {
+      "text": true,
+      "background": true,
+      "link": false
+    },
+    "html": false
+  },
+  "textdomain": "built-weather",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php"
+}
